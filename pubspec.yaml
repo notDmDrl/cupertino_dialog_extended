@@ -1,0 +1,22 @@
+name: cupertino_dialog_extended
+description: Cupertino dialog and action sheet with customisation options.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.17.0-0 <3.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  collection: ^1.16.0
+  meta: ^1.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  very_good_analysis: ^3.0.1
+  dart_code_metrics: ^4.17.0-dev.1
