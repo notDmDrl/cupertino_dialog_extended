@@ -54,23 +54,20 @@ class CupertinoActionSheetActionExtended extends StatelessWidget {
       child: GestureDetector(
         onTap: onPressed,
         behavior: HitTestBehavior.opaque,
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(
-            minHeight: kActionSheetButtonHeight,
-          ),
-          child: Semantics(
-            button: true,
-            child: Container(
-              alignment: Alignment.center,
-              padding: const EdgeInsets.symmetric(
-                vertical: 16,
-                horizontal: 10,
-              ),
-              child: DefaultTextStyle(
-                style: style,
-                textAlign: TextAlign.center,
-                child: child,
-              ),
+        child: Semantics(
+          button: true,
+          child: Container(
+            alignment: Alignment.center,
+            padding: const EdgeInsets.symmetric(
+              horizontal: 10
+            ),
+            constraints: const BoxConstraints(
+              minHeight: kActionSheetButtonHeight,
+            ),
+            child: DefaultTextStyle(
+              style: style,
+              textAlign: TextAlign.center,
+              child: child,
             ),
           ),
         ),
